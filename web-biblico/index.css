@@ -1,0 +1,86 @@
+/* index.css */
+
+/* Importar la fuente deseada */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezados */
+h1, h2 {
+  text-align: center;
+  color: #6c3c21;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* Enlaces */
+a {
+  color: #6c3c21;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a15c33;
+}
+
+/* Párrafos */
+p {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* Diseño ilustrativo */
+body {
+  background-image: url('https://source.unsplash.com/random/1920x1080?bible');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
